@@ -39,14 +39,6 @@ client.on('message', async message => {
     if (message.author.bot) return;
     if (message.channel.type === 'dm') return;
 
-    /*if(command || sCommand) {
-        message.channel.send(`Hi, at the time of you reading this I am taking an indefinite break from the server and taking this bot along with me. I'll get straight to the point, SubjectiveF has been an asshole to me and my friends countless times, and shows no remorse or effort to change. I'm sure he or someone else will try to spin my absence as being about what happened right before I left, or some other small thing, but that was just the straw that broke the camel's back. He is a hurtful person to be around, and has gone so far as blatantly saying so. A point he made the day I'm writing this that really pushed me towards leaving is that he doesn't single me out, he's just like this to everyone. I don't think any of you deserve to be around people like that. Leaving was a very hard decision to make, as I've spent a lot of my time with this server the past few months, and if it were just the rest of you I'd love to continue to do so. However, people defending someone who is that awful to be around outweighs the other benefits of being in this community, at least to me. I hope that something can change, whether that is Subjective showing real effort to change as a person and be nicer to people, or him leaving the server. If not, it's been nice knowing the rest of you, and my DMs are open if anyone wants to get in touch with me.\n\n-Silver`);
-    }*/
-
-
-
-
-
     //Ping
     if (command === `PING`) {
         message.channel.send('Fuck you!');
@@ -291,7 +283,36 @@ client.on('message', async message => {
             `your mom is gonna display in whatever language her console is set to`,
             `I'm standing naked in my bathroom chugging a pre shower brewski so I'll be right back with you kids`,
             `tread lightly, lest you get sucked off by me right now`,
-            `i do all kinds of stupid and gay shit. they cant attack you if you dress up as a girl and kiss them. i dont like doing it  but it works`];
+            `i do all kinds of stupid and gay shit. they cant attack you if you dress up as a girl and kiss them. i dont like doing it  but it works`,
+            `you play ganon for long enough, you're gonna get ganon brain`,
+            `what the fuck is a rhombus?`,
+            `he double stocked him!`,
+            `If he was under 12 years of age, then I'll allow it.`,
+            `I thought barnes and noble was the ice cream shop`,
+            `I want wub to have kids so I can curbstomp his kids`,
+            `people who say vaginas are good looking are psychopaths`,
+            `"Never paying attention to that Gringo Mudblood again." -SubF`,
+            `October sucks`,
+            `I should do octo nut october\n8 times a day`,
+            `wear a trench coat and a hat every day and stand in the corner\npeople like mystery`,
+            `protip: everyone is gay`,
+            `i've never agreed with you more\nPDA deserves jail time`,
+            `like if you wanted to fuck the blue people from avatar or a klingon in public people still wouldn't like that`,
+            `I still think people holding hands in public should be beaned in the gourd with tennis balls`,
+            `Theres a guy near me using his outside voice while indoors\nNobody else is nearly as loud as him\nSub can you please quiet down a bit`,
+            `Try\n- Using more Slurs\n- Breaking things in your home\n- Internalizing the emotions but letting your self-worth take the brunt of the negative energy`,
+            `Jerking off before you respond to your crush’s text so you won’t say dumb shit was like my number one high school life hack`,
+            `morning boner is basically a phone alarm for me to take my ssri now`,
+            `depending on what you use reddit for, either all the posters are assholes or all the posts are assholes`,
+            `My grandma owns an old timey cash register, I guess her house is a store now and people can just buy her furniture`,
+            `That's because burritos are American.`,
+            `I wish I would just eat shit and die`,
+            `socially, im the most retarded demographic`,
+            `I watched hentai before I watched porn for the first time because it got linked in youtube comments`,
+            `Thats not minecraft, thats my wife!`,
+            `| only type | with | because |'m a fucking hipster`,
+            `not l, the gamer\nwas it an i or an L?\nwho knows\nonly I, the gamer\n- a poem by wub -`,
+            `zizek really is just hegelfag lobsterman but his video where he rails against political correctness and how his black friends giving him the n word pass are useful for decoverting to be nazi imageboard users`];
 
         var r = Math.floor((Math.random() * quotes.length));
 
@@ -577,7 +598,8 @@ client.on('message', async message => {
                 `there was a set with amsa vs hbox I think where he's doing ECE's and dies for it\nand scar is like HOW DID HE DIE`,
                 `bowser's NICE top spin serve is only 6 mph faster than baby mario's due to a programming error?`,
                 `you can see the decline of civilization is directly correlated to how prominent final fantasy is in popular media`,
-                `lgl will actually hurt amsa and ultimate2king too? we should only be trying to target hbox here, ok?`];
+                `lgl will actually hurt amsa and ultimate2king too? we should only be trying to target hbox here, ok?`,
+                `in the PAL version of Super Smash Bros. Melee, Marth, Roy, Link, and Young Link had their swords completely removed from the game?`];
 
         var t = [`Wow!`,
                 `It's true!`,
@@ -844,7 +866,8 @@ client.on('message', async message => {
                 `Has switched mains 37 times this year and counting`,
                 `thinks Kirby's Dream Course should've won the video game tournament`,
                 `women my age are kinda low tier\nfucking someone so young would feel kinda pedophilic`,
-                `was there a big armada/mango rivalry?`];
+                `was there a big armada/mango rivalry?`,
+                `I should do octo nut october\n8 times a day`];
 
         var r = Math.floor((Math.random() * c.length));
 
@@ -1048,7 +1071,10 @@ client.on('message', async message => {
     if (command === `IBDW` || command === `CODY`) {
         var i = [`I Be Destroying Waterclosets`,
                 `I Blow Dude Weiners`,
-                `I Binge Drink Weekly`];
+                `I Binge Drink Weekly`,
+                `I Bang Dudes Weekly`,
+                `I Be a Devil Worshiper`,
+                `I Be Docking Weiners`];
 
         var r = Math.floor((Math.random() * i.length));
 
@@ -1175,25 +1201,6 @@ client.on('message', async message => {
         message.channel.send(`though he is better, its some dummy high apm dumb shit`);
     }
 
-    /*if (command === `HBOX` || command === `HUNGRYBOX` || command === `HWORD`) {
-        var senderBalance = await eco.FetchBalance(sender.id);
-        var cost = 150;
-
-        //Check if sender has enough money
-        if (senderBalance.balance < cost) {
-            const embed = new Discord.RichEmbed()
-                .setTitle(`Error: not enough ${currencyName}`)
-                .setDescription(`This command costs ${cost} to use.`)
-                .setColor(0xFF0000)
-            message.channel.send({embed});
-            return;
-        }
-
-        var sub = await eco.SubstractFromBalance(sender.id, cost);
-
-        message.channel.send(`PC Chris is a nigger`, {tts: true});
-    } */
-
     if (command === `AL` || command === `ANIMELOVER`) {
         var d1 = [`I know what you're thinking: "Do NOT lamb D1." Well guess what? According to my calculations that wasn't really calculated, I have decided that it is the appropriate time for me to make a hard read and lamb the fuck out of that person. I'm a lambing GOD, and I'm 99.9% sure this person is mafia. If not, that's okay cause I'll be dead anyways. I'm sorry if I failed you, town. 3, 2, 1.`,
                 `Oh, just 🥩 succulent, tender 💦 HNG 💦 Just 🥩 Just a lil' 🥩🥩 I'm just preparing 🧂 That's it 💦 JUS'- 💦 Getting my 🐑 ready is all 🥩🥩 Oh JUST A BIT 💦 🧂🥩🥩🥩🧂 A LITTLE SAAAAAALT 🧂 SOME S-S-SPICE 🌶️🌶️ AHHHHHhhhhhh JUST 💦💦 GETTING MY 🐑🐑🐑🐑 ON 💯💯💯`,
@@ -1236,7 +1243,16 @@ client.on('message', async message => {
     }
 
     if (command === `CUCK` || command === `CUCKDADDY`) {
-        message.channel.send(`lives in the #jamz channel`);
+        var c = [`I *told* you to stop drinking alone, Ciaran!`,
+                `Go get some friends, Ciaran!`,
+                `Get off Grailed and go outside, Ciaran!`,
+                `Stop wobbling people, Ciaran, that's mean!`,
+                `Pick a cooler character, Ciaran!`,
+                `PM is for weiners, Ciaran, play Melee!`];
+
+        var r = Math.floor((Math.random() * c.length));
+
+        message.channel.send(c[r]);
     }
 
     if (command === `RISC` || command === `BESTDK`) {
@@ -1395,20 +1411,6 @@ client.on('message', async message => {
             message.channel.send(`Error: This user already has a balance`);
         }
     }
-
-    /*if(sCommand === `FRIDAY` ||  sCommand === `DOUBLE` || sCommand === `DOUBLECRAB` || sCommand === `DOUBLECRABFRIDAY`) {
-        var d=new Date();
-
-        if(d.getDay() != 5) {
-            message.channel.send(`It's not Friday yet.`);
-        }
-
-        if(d.getDay() == 5) {
-            var reset = await eco.ResetDaily(message.author.id);
-
-            message.reply(`Your daily crab was reset! Have another go!`);
-        }
-    } */
 
     if (sCommand === `ADD`) {
         //Check for better mod
