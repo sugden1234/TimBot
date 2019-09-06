@@ -1,0 +1,22 @@
+{
+  "name": "tedmt",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "tedmt.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-economy": "^1.1.6",
+    "discord-leveling": "^1.0.3",
+    "discord.js": "^11.5.1",
+    "sequelize": "^5.10.1",
+    "sqlite3": "^4.0.9"
+  }
+}
