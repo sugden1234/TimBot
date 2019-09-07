@@ -372,7 +372,7 @@ client.on('message', async message => {
             var reward = 0;
 
             if (r < 2) {
-                reward = 15;
+                reward = 10;
             } else if (r >= 2 && r < 4) {
                 reward = 20;
             } else if (r >= 4 && r < 6) {
