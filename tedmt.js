@@ -312,7 +312,8 @@ client.on('message', async message => {
             `Thats not minecraft, thats my wife!`,
             `| only type | with | because |'m a fucking hipster`,
             `not l, the gamer\nwas it an i or an L?\nwho knows\nonly I, the gamer\n- a poem by wub -`,
-            `zizek really is just hegelfag lobsterman but his video where he rails against political correctness and how his black friends giving him the n word pass are useful for decoverting to be nazi imageboard users`];
+            `zizek really is just hegelfag lobsterman but his video where he rails against political correctness and how his black friends giving him the n word pass are useful for decoverting to be nazi imageboard users`,
+            `That's both an off and a yikes.\nYoof.`];
 
         var r = Math.floor((Math.random() * quotes.length));
 
