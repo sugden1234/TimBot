@@ -1692,7 +1692,7 @@ client.on('message', async message => {
 
     //Sugden / Cum
 
-    if (command === `SUGDEN` || command === `SUG` || command === `CHAZZ` || command === `CHAZ` || command === `CHAZZDEN` || command === `SUGDEEZY` || command === `SUGDEB` || command === `DOG`) {
+    if (command === `SUGDEN` || command === `SUG` || command === `CHAZZ` || command === `CHAZ` || command === `CHAZZDEN` || command === `SUGDEEZY` || command === `SUGDEB` || command === `DOG` || command === `CUM`) {
         var s = [`https://i.imgur.com/YtYweuz.png`,
                 `https://cdn.discordapp.com/attachments/608818247877525526/615577924783046656/unknown.png`,
                 `https://media.discordapp.net/attachments/612061198288027796/614471733197668388/IMG-20190812-WA0005.jpg?width=507&height=676`,
