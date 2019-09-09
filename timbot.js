@@ -13,7 +13,7 @@ sql.open('Storage/userData.sqlite');
 
 //Initialization
 client.on('ready', () => {
-    console.log('TimBot v1.0.0 Launched');
+    console.log('TimBot v1.0.1 Launched');
 
     client.user.setActivity("with Sunny :)", { type: "PLAYING" });
 })
@@ -61,7 +61,7 @@ client.on('message', async message => {
 
     if (command === `PATCHNOTES` || command === `PATCH`) {
         const embed = new Discord.RichEmbed()
-            .setTitle(`TimBot v1.01 Patch Notes, 9/9/19`)
+            .setTitle(`TimBot v1.0.1 Patch Notes, 9/9/19`)
             .setColor(0x2d64f1)
             .addField('!q', `Added 4 new quotes.`, true)
             .addField('!sugden', `Added 13 new pics.`, true)
@@ -1591,7 +1591,7 @@ client.on('message', async message => {
             `Fiend`,
             `Fiction`,
             `Faker`,
-            `Faker? I think you're the fake hedgehog around here. You're comparing yourself to me? Ha! You're not even good enough to be my fake.`
+            `Faker? I think you're the fake hedgehog around here. You're comparing yourself to me? Ha! You're not even good enough to be my fake.`,
             `Friend`,
             `Fool`,
             `Flame`,
