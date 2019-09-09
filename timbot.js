@@ -54,6 +54,26 @@ client.on('message', async message => {
         message.channel.send('Fuck you too!');
     }
 
+
+
+
+    //Patch Notes
+
+    if (command === `PATCHNOTES` || command === `PATCH`) {
+        const embed = new Discord.RichEmbed()
+            .setTitle(`TimBot v1.01 Patch Notes, 9/9/19`)
+            .setColor(0x2d64f1)
+            .addField('!q', `Added 4 new quotes.`, true)
+            .addField('!sugden', `Added 13 new pics.`, true)
+            .addField('!anti', `adjusted to be more faithful to the original.`, true)
+            .addField('!subf', `Added 3 new results, fixed it so it actually works.`, true)
+            .addField('!bbb', 'Added 2 new results', true)
+            .addField('!patch or !patchnotes', 'Created a new command, displays patch notes for the most recent update.', true)
+        message.channel.send({embed});
+    }
+
+
+
     //Help + Commands
     if (command === `HELP`) {
         const embed = new Discord.RichEmbed()
@@ -70,6 +90,11 @@ client.on('message', async message => {
     if (command === `COMMAND` || command === `COMMANDS`) {
         message.channel.send("**Commands List (Up-to-date):** \n \n**IMPORTANT COMMANDS** \n**!q**  - quotes \n**!sugden** - Tedcord pet pics \n**!precrab** - practice on dodging crabs, unlimited use \n**!crab** - !precrab but the real deal, roll for daily rewards depending on the crab outcome \n**!help** - Instructions on currency-based commands \n**!commands** - this command, ya dingus \n \n**TEDCORD USER-BASED COMMANDS** \n!adlp, !ahampster, !al or !animelover, !anti, !beywiz, !brio, !bubbles, !cael, !cag, !coffee, !cori, !cuck, !darsh, !dimi, !draco, !drew, !duck, !loscar, !midnight, !mmuller, !risc, !sm, !silver, !soap, !subf, !ted, !wub \n \n**NETPLAY COMMANDS** \n**!netplay - @'s anyone signed up to regions you want to play against, the summoning call of TimCord** \n**!opt-in** - signs you up for a specific netplay role, i.e. !opt-in N-NE makes it so you will be @'ed every time someone wants to netplay vs NE, and !opt-in VS-NE will make it so whenever you use !netplay, N-NE roles will be @'ed. \n**!opt-out** - akes away a specifc netplay role from you, i.e. !opt-out N-NE takes the N-NE role away from you. \n \n**MISC. COMMANDS** \n**!askgoiter** - for an accurate fortune-telling \n**!hbox** - for wise words, teachings and history from the Juan True God \n**!mango** - for teachings and history on Satan himself \n**!axe, !bbb or !bobbybigballz, !chacha, !gimr, !ibdw, !minecraft, !never**");
     }
+
+
+
+
+
 
     //General
     if (command === `QUOTE` || command === `Q`) {
@@ -337,6 +362,10 @@ client.on('message', async message => {
             `Did you know that in the PAL version of Super Smash Bros. Melee, Marth, Roy, Link, and Young Link had their swords completely removed from the game?`,
             `Dam, my great grandma died \nGood run though`,
             `no no it's okay \nthis is a complaint that's allowed \ntrust`,
+            `Adoptions are easier to cancel than natty kids`,
+            `Just go for one that's retarded`,
+            `I'm not about to adopt a kid if there's even the slightest possibility he'll want to be a Fox main.`,
+            `"What's that podcast where they watch the same movie every day" \n"twitch.tv/chillendude?"`
             `zizek really is just hegelfag lobsterman but his video where he rails against political correctness and how his black friends giving him the n word pass are useful for decoverting to be nazi imageboard users`];
 
         var r = Math.floor((Math.random() * quotes.length));
@@ -594,7 +623,7 @@ client.on('message', async message => {
         var r = Math.floor((Math.random() * a.length));
         var r2 = Math.floor((Math.random() * a.length));
 
-        message.channel.send(`What if `+a[r]+` sex `+a[r2]+`?`);
+        message.channel.send(`What if `+a[r]+` sex `+a[r2]);
     }
 
 
@@ -691,6 +720,8 @@ client.on('message', async message => {
                 `https://www.youtube.com/watch?v=Kg465SHnEG8`,
                 `https://www.youtube.com/watch?v=ubHXS81Ylks`,
                 `https://www.youtube.com/watch?v=5QOHPCDmqH8`,
+                `https://www.youtube.com/watch?v=QWeFofvgVb8`,
+                `https://www.youtube.com/watch?v=4G6fhb6IBS0`,
                 `https://www.youtube.com/watch?v=RyBYSSsuWUo`];
 
         var r = Math.floor((Math.random() * b.length));
@@ -1467,8 +1498,11 @@ client.on('message', async message => {
             `Fucking stop tagging me on reddit dot com`,
             `counts Friendlies`,
             `FUCKING FUCK`,
+            `https://cdn.discordapp.com/attachments/611202965558132747/620398820844503052/Fuck_you.gif`,
             `Fuck`,
             `Fucker`,
+            `Forgetful`,
+            `Faggetful`,
             `Fascist`,
             `Fag`,
             `FungaBunga`,
@@ -1557,7 +1591,7 @@ client.on('message', async message => {
             `Fiend`,
             `Fiction`,
             `Faker`,
-            `Faker? I think you're the fake hedgehog around here. You're comparing yourself to me? Ha! You're not even good enough to be my fake.`,
+            `Faker? I think you're the fake hedgehog around here. You're comparing yourself to me? Ha! You're not even good enough to be my fake.`
             `Friend`,
             `Fool`,
             `Flame`,
@@ -1692,9 +1726,22 @@ client.on('message', async message => {
 
     //Sugden / Cum
 
-    if (command === `SUGDEN` || command === `SUG` || command === `CHAZZ` || command === `CHAZ` || command === `CHAZZDEN` || command === `SUGDEEZY` || command === `SUGDEB` || command === `DOG`) {
+    if (command === `SUGDEN` || command === `SUG` || command === `CHAZZ` || command === `CHAZ` || command === `CHAZZDEN` || command === `SUGDEEZY` || command === `SUGDEB` || command === `DOG` || command === `CUM`) {
         var s = [`https://i.imgur.com/YtYweuz.png`,
                 `https://cdn.discordapp.com/attachments/608818247877525526/615577924783046656/unknown.png`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/619592892234858516/1567789137645.png`,
+                `https://cdn.discordapp.com/attachments/612063946643472389/618975820156764173/corn.png`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/618344161225211936/69473515_10219276880943119_7832993335324180480_n.png`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/616846521392168974/received_780188335732851.jpeg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/617558724898324657/JPEG_20190831_201749.jpg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/617443605983920215/JPEG_20190831_124022.jpg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/615952645609357332/JPEG_20190827_175534.jpg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/617397856029900800/IMG_20190831_173826.jpg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/617101653388296278/JPEG_20190830_220100.jpg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/616925518025064481/JPEG_20190830_102128.jpg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/619100351013847040/JPEG_20190905_102330.jpg`,
+                `https://cdn.discordapp.com/attachments/612058753293877274/619087599876833280/JPEG_20190905_093240.jpg`,
+                `https://cdn.discordapp.com/attachments/612063946643472389/618913601851228171/JPEG_20190904_220124.jpg`,
                 `https://media.discordapp.net/attachments/612061198288027796/614471733197668388/IMG-20190812-WA0005.jpg?width=507&height=676`,
                 `https://cdn.discordapp.com/attachments/612058753293877274/615560160676675595/IMG_20190826_1055292.jpg`,
                 `https://cdn.discordapp.com/attachments/612058753293877274/614471173492703242/JPEG_20190823_154853.jpg`,
@@ -1778,100 +1825,8 @@ client.on('message', async message => {
                 `https://cdn.discordapp.com/attachments/542494706932645918/598248990638735370/image0.jpg`,
                 `https://i.imgur.com/vnY6qBY.jpg`,
                 `https://cdn.discordapp.com/attachments/542494706932645918/598248832144375959/image0.jpg`,
-                `https://cdn.discordapp.com/attachments/608818247877525526/615578318540111922/unknown.png`];
-
-        var r = Math.floor((Math.random() * s.length));
-
-        message.channel.send(s[r]);
-    }
-
-    if (command === `CUM`) {
-        var s = [`https://i.imgur.com/YtYweuz.png`,
-                `https://cdn.discordapp.com/attachments/608818247877525526/615577924783046656/unknown.png`,
-                `https://media.discordapp.net/attachments/612061198288027796/614471733197668388/IMG-20190812-WA0005.jpg?width=507&height=676`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/615560160676675595/IMG_20190826_1055292.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/614471173492703242/JPEG_20190823_154853.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/614471100491104286/JPEG_20190823_154829.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/613779410809651213/JPEG_20190821_175958.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/613779172455743525/JPEG_20190821_175842.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/613415798572056597/IMG_20190820_175249.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/613034163418824922/JPEG_20190819_163804.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/612978436817813554/JPEG_20190819_125658.jpg`,
-                `https://cdn.discordapp.com/attachments/612063946643472389/612338727749943297/JPEG_20190817_183511.jpg`,
-                `https://cdn.discordapp.com/attachments/612063946643472389/612338128161734734/JPEG_20190817_183246.jpg`,
-                `https://cdn.discordapp.com/attachments/612058753293877274/612253861364629514/JPEG_20190817_125800.jpg`,
-                `https://cdn.discordapp.com/attachments/612063946643472389/615248249481199748/emoji.gif`,
-                `https://cdn.discordapp.com/attachments/612063946643472389/615244724504231988/Z.png`,
-                `https://cdn.discordapp.com/attachments/612063946643472389/615231847688962049/sugden.png`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/611563402283712552/IMG_20190815_151426.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/611506900852277248/JPEG_20190815_112939.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/610835186329845810/IMG_20190813_150028.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/588448339566002195/image0.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/588442510062256139/image2.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/588442509248692259/image0.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/588442508812615680/image1.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/609224595832307722/IMG_20190808_232043359.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/609223357166256147/received_687242161793112.jpeg`,
-                `https://i.imgur.com/Tf9QJaA.png`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/605540736271777831/Screenshot_20190729-172231_Instagram.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/604435328610336778/timmy.png`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/605540868459593748/Screenshot_20190729-172303_Instagram.jpg`,
-                `https://media.discordapp.net/attachments/555176988562948116/600003486087905281/unknown.png?width=934&height=640`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/603256016632676362/JPEG_20190723_170352.jpg`,
-                `https://i.imgur.com/dqdUUZt.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/603428017863131164/JPEG_20190724_042706.jpg`,
-                `https://i.imgur.com/BvXGg7I.png`,
-                `https://media.discordapp.net/attachments/566411042738143242/600061732135764003/D-RI0IdW4AQg5Oj.png?width=640&height=640`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600003058323423233/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600003345767202818/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600003486087905281/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600067265987346432/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600067494463406090/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600067651313729546/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600067685019156518/IMG_20181001_122428.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600069530353532948/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600069573932351496/20190508_173330.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/600070030293467136/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602172803609001994/JPEG_20190720_103000.jpg`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602172885888663552/IMG_20190718_193205.jpg`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602172886807085087/IMG_20190718_193115.jpg`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602172966729416735/JPEG_20190720_163446.jpg`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602207672137285633/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602207713757364233/20180429_191241.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602207743058771975/FullSizeR.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602207763224985600/red_and_blue.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602207790387298311/1449118552328.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602208807552024577/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602209495325737006/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602209552989159424/Snapchat-825518123.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602209741372129280/unknown.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/602210191877865502/unknown.png`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/596392410913832970/JPEG_20190704_103028.jpg`,
-                `https://cdn.discordapp.com/attachments/567417652331413544/601222330865156097/IMG_20190622_142738926.jpg`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/605898887491878956/dog.png`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/605898903086170147/dog_2.png`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/605539691571314718/JPEG_20190728_090311.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/605540018982748172/mq8eny9u3da31.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/604802387756056707/image0.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/604682716482633758/JPEG_20190727_153253.jpg`,
-                `https://cdn.discordapp.com/attachments/555176988562948116/606140681353691166/unknown.png`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/606138286091665451/image.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/606113989956730901/JPEG_20190731_142006.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/606095855841443850/JPEG_20190731_130813.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/607189046015426560/JPEG_20190803_133207.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/607188105207873537/JPEG_20190803_132820.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/606559419605581834/IMG-20180831-WA0002.jpg`,
-                `https://cdn.discordapp.com/attachments/598336899010003015/606270930641223693/IMG_20190731_194403770.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/606138286091665451/image.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/607210695876149248/image0.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/607210812594978826/image0.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/607211749984174110/image0.jpg`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/607222944317571073/Screenshot_20190803-164652.png`,
-                `https://cdn.discordapp.com/attachments/542142763693768731/605540431043756033/20190729_172103.jpg`,
-                `https://cdn.discordapp.com/attachments/542494706932645918/598248990638735370/image0.jpg`,
-                `https://i.imgur.com/vnY6qBY.jpg`,
                 `Never cum`,
-                `https://cdn.discordapp.com/attachments/542494706932645918/598248832144375959/image0.jpg`,
+                `PSA: Don't do drugs`,
                 `https://cdn.discordapp.com/attachments/608818247877525526/615578318540111922/unknown.png`];
 
         var r = Math.floor((Math.random() * s.length));
