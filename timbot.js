@@ -1475,7 +1475,7 @@ client.on('message', async message => {
             `Fiction`,
             `Fountain of Dreams`,
             `Faggot`,
-            `Funeral`
+            `Funeral`,
             `Falco`,
             `Fungus`,
             `Fashion`,
