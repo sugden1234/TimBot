@@ -365,7 +365,7 @@ client.on('message', async message => {
             `Adoptions are easier to cancel than natty kids`,
             `Just go for one that's retarded`,
             `I'm not about to adopt a kid if there's even the slightest possibility he'll want to be a Fox main.`,
-            `"What's that podcast where they watch the same movie every day" \n"twitch.tv/chillendude?"`
+            `"What's that podcast where they watch the same movie every day" \n"twitch.tv/chillendude?"`,
             `zizek really is just hegelfag lobsterman but his video where he rails against political correctness and how his black friends giving him the n word pass are useful for decoverting to be nazi imageboard users`];
 
         var r = Math.floor((Math.random() * quotes.length));
