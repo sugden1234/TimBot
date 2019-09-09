@@ -1557,7 +1557,7 @@ client.on('message', async message => {
             `Fiend`,
             `Fiction`,
             `Faker`,
-            `Faker? I think you're the fake hedgehog around here. You're comparing yourself to me? Ha! You're not even good enough to be my fake.`
+            `Faker? I think you're the fake hedgehog around here. You're comparing yourself to me? Ha! You're not even good enough to be my fake.`,
             `Friend`,
             `Fool`,
             `Flame`,
@@ -1584,7 +1584,7 @@ client.on('message', async message => {
                   `Scumbag.`,
                   `Troll.`];
 
-        var r = Math.floor((Math.random() * t.length))
+        var r = Math.floor((Math.random() * t.length));
 
         message.channel.send(t[r]);
     }
@@ -1692,7 +1692,7 @@ client.on('message', async message => {
 
     //Sugden / Cum
 
-    if (command === `SUGDEN` || command === `SUG` || command === `CHAZZ` || command === `CHAZ` || command === `CHAZZDEN` || command === `SUGDEEZY` || command === `SUGDEB` || command === `DOG` || command === `CUM`) {
+    if (command === `SUGDEN` || command === `SUG` || command === `CHAZZ` || command === `CHAZ` || command === `CHAZZDEN` || command === `SUGDEEZY` || command === `SUGDEB` || command === `DOG`) {
         var s = [`https://i.imgur.com/YtYweuz.png`,
                 `https://cdn.discordapp.com/attachments/608818247877525526/615577924783046656/unknown.png`,
                 `https://media.discordapp.net/attachments/612061198288027796/614471733197668388/IMG-20190812-WA0005.jpg?width=507&height=676`,
@@ -1870,7 +1870,7 @@ client.on('message', async message => {
                 `https://cdn.discordapp.com/attachments/542142763693768731/605540431043756033/20190729_172103.jpg`,
                 `https://cdn.discordapp.com/attachments/542494706932645918/598248990638735370/image0.jpg`,
                 `https://i.imgur.com/vnY6qBY.jpg`,
-                `Never cum`
+                `Never cum`,
                 `https://cdn.discordapp.com/attachments/542494706932645918/598248832144375959/image0.jpg`,
                 `https://cdn.discordapp.com/attachments/608818247877525526/615578318540111922/unknown.png`];
 
